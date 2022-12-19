@@ -1,10 +1,11 @@
-import {FC,PropsWithChildren} from "react"
-
-const RootLayout : FC<PropsWithChildren> = ({children}) => {
+const RootLayout = ({children} : {children: React.ReactNode}) => {
     return (
         <html lang="ja">
             <title>JamStack</title>
-            <body>{children}</body>
+            <body>
+                <h1>JamStack</h1>
+                {children}
+            </body>
         </html>
     )
 }
